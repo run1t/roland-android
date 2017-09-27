@@ -1,19 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.imie.rolandgarros.MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/test"
+            android:scaleX="1.75"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/logo_roland_garros"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_shape_button_orange"
+                android:layout_marginTop="110dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:drawablePadding="15dp"
+                android:drawableStart="@drawable/ic_user_white_50"
+                android:textColor="#FFFFFF"
+                android:elevation="5dp"
+                android:fontFamily="sans-serif-light"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_shape_button_orange"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/ic_lock_white_50"
+                android:textColor="#FFFFFF"
+                android:paddingStart="12dp"
+                android:drawablePadding="15dp"
+                android:paddingEnd="12dp"
+                android:elevation="5dp"
+                android:fontFamily="sans-serif-light"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/bt_connexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connexion"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_shape_button_green"
+                android:elevation="5dp"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-light"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Espace journaliste"
+                android:textColor="#FFFFFF"
+                android:padding="5dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="38dp"
+                android:drawableEnd="@drawable/ic_arrow_right_white"
+                android:drawablePadding="10dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
